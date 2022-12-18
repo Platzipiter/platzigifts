@@ -39,6 +39,18 @@ function sidebar(){
             'after_widget'  => '</div>',
         )
         );
+
+    register_sidebar(
+        array(
+            'name' => 'Nav header',
+            'id'   => 'header',
+            'description' => 'Zona de Widgets para el header',
+            'before_title' => '<p>',
+            'after_title'  => '</p>',
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget'  => '</div>',
+        )
+        );
 }
 
 add_action('widgets_init', 'sidebar');

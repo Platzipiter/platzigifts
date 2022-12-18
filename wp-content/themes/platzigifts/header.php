@@ -16,14 +16,7 @@
             </div>
             <div class="col-8">
                 <nav>
-                    <?php wp_nav_menu(
-                        array(
-                            'theme_location' => 'top_menu',
-                            'menu_class'    => 'menu-principal',
-                            'container_class' => 'container-menu',
-                        )
-                    ); 
-                    ?>
+                    <?php dynamic_sidebar('header'); ?>
                 </nav>
             </div>
         </div>
